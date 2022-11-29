@@ -155,6 +155,7 @@ void setOutputdata(double *outputdata)
 }
 int main()
 {
+    double *nothing = malloc(sizeof(double));
     double *hidden = malloc(sizeof(double) * NUMHIDDEN);                   // hidden layer值
     double *hidden_weight = malloc(sizeof(double) * NUMHIDDEN * NUMINPUT); // hidden layer 權重
     double *hidden_bias = malloc(sizeof(double) * NUMHIDDEN);              // hidden layer 的bias
